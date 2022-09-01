@@ -23,7 +23,7 @@ try:
 
     # Находим значения Х для передачи в формулу
     x = browser.find_element(By.ID, "input_value").text
-    print(x)
+    # print(x)
 
     # Рассчитываем формулу
     result = str(math.log(abs(12 * math.sin(int(x)))))
