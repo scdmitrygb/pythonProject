@@ -1,5 +1,7 @@
 import math
 import time
+
+from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -9,7 +11,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 link = "http://suninjuly.github.io/explicit_wait2.html"
 
 try:
-    browser = webdriver.Chrome()
+    browser: WebDriver = webdriver.Chrome()
 
     # Говорим WebDriver ждать все элементы в течение 5 секунд
     browser.implicitly_wait(5)
